@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="JavaScript/movies.json"></script>
+
+	<title>Code Review 5</title>
+</head>
+
+
+<body>
+	<header>
+		<div id="headerDiv">
+			Movie Factory
+		</div>
+	</header>
+
+	<nav>
+		<a href="index.html">
+			Home
+		</a>
+		<span>&nbsp | &nbsp</span>
+		<a href="https://imdb.com">
+			IMDb
+		</a>
+		<span>&nbsp | &nbsp</span>
+		<a href="">
+			Contact
+		</a>
+	</nav>
+
+	<main>
+		<div id="titleDiv" class="row">
+			<div id="leftDiv" class="movieDiv col-4">
+				Movies
+			</div>
+			<div id="centerDiv" class="movieDiv col-4 ml-auto">
+				Movies
+			</div>
+			<div id="sortDiv" class="col-4 ml-auto verticalCenter">
+				<div id="sortBtn">
+					&#9660 Sort By
+				</div>
+				<div id="dropdown-content">
+				    <div id="alph">
+				    	Alphabetical
+				    </div>
+				    <div id="mostLiked">
+				    	Most liked
+				    </div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Movie Content goes here-->
+		<div class = "container">
+			<div id="movieDisplay" class="row">
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div>
+			Movie Factory
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="JavaScript/script.js"></script>
+</body>
+</html>

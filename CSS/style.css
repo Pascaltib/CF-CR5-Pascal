@@ -1,0 +1,196 @@
+header{
+	width: 100%;
+	height:	10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	text-align: center;
+	color: white;
+	font-size: 4em;
+}
+
+headerDiv{
+	width: 100%;
+	height: 100%;
+}
+
+nav{
+	height: 7vh;
+	width: 100%;
+	background-color: #b27300;
+	display: flex;
+	align-items: center;
+	padding-left: 3%;
+	font-size: 2em;
+	color: white;
+}
+
+a{
+	color: white;
+	font-weight: bold;
+
+}
+
+main{
+	color: white;
+	background-color: #181818;
+}
+
+.verticalCenter{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#leftDiv{
+	visibility: hidden;
+}
+
+.movieDiv{
+	text-align: center;
+	font-size: 3em;
+}
+
+#sortDiv{
+
+	font-size: 2em;
+}
+
+#sortBtn{
+	padding-right: 10%;
+}
+
+#dropdown-content{
+	text-align: center;
+	display: none;
+	position: absolute;
+	background-color: grey;
+	min-width: 160px;
+	top: 7vh;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+#alph{
+	border-bottom: 1px solid white;
+}
+
+#sortDiv:hover #sortBtn{
+	color: grey;
+	font-weight: lighter;
+}
+
+#dropdown-content div:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+#sortDiv:hover #dropdown-content{
+	display: block;
+}
+
+#titleDiv{
+	margin-bottom: 4vh;
+}
+
+.movieBox{
+	display: flex;
+	margin-bottom: 4vh;
+}
+
+.contentDiv{
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.movieTitle{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.movieDescription{
+	padding-top: 1vh;
+	font-size: 1em;
+}
+
+.likeDiv{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.greenDiv{
+	border: 2px solid white;
+	border-radius: 20px;
+	font-size: 2em;
+}
+
+.greenDiv:hover{
+	background-color: grey;
+	cursor: pointer;
+	border-color: green;
+}
+
+
+.circleDiv{
+	margin-left: 1vw;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 3px solid white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer{
+	width: 100%;
+	height:	15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	text-align: center;
+	color: white;
+	font-size: 4em;
+}
+
+/*Media queries to make it look nice on phone size*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header{
+  	height: 15vh;
+  	font-size: 3em;
+  }
+  footer{
+  	height: 20vh;
+  	font-size: 3em;
+  }
+  .movieDescription{
+	font-size: 0.8em;
+  }
+  .greenDiv{
+  	font-size: 1.5em;
+  }
+  .movieBox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+  #centerDiv{
+  	visibility: hidden;
+  }
+  #leftDiv{
+  	visibility: visible;
+  	padding-left: 10%;
+  }
+  #sortDiv{
+	font-size: 1em;
+}
+  nav{
+  	font-size: 1.5em;
+  }
+}
